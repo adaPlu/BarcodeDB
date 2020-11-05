@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="381dp"
+        android:layout_height="620dp"
+        android:layout_above="@+id/btnAction"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+
+        android:layout_marginBottom="-3dp" />
+
+    <TextView
+        android:id="@+id/txtBarcodeValue"
+        android:layout_width="152dp"
+        android:layout_height="615dp"
+        android:layout_above="@+id/btnAction"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="243dp"
+
+        android:layout_marginBottom="6dp"
+        android:text="@string/no_barcode"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/batch_complete" />
+
+    <Button
+        android:id="@+id/btnAction2"
+        android:layout_width="387dp"
+        android:layout_height="64dp"
+        android:text="@string/scan_complete" />
+
+</RelativeLayout>
